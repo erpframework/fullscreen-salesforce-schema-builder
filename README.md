@@ -1,4 +1,4 @@
-fullscreen-schema-browser
+Fullscreen Salesforce Schema Builder
 =========================
 
-A Chrome plugin to make the Schema Browser occupy the maximum browser window area.
+A Chrome extension to make the Salesforce Schema Builder occupy the maximum browser window area.
