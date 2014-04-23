@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Fullscreen Schema Builder",
-  "version": "0.1.0",
+  "name": "Fullscreen Salesforce Schema Builder",
+  "version": "0.2.0",
   "description": "Description here",
 
   "icons": {

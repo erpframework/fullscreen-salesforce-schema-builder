@@ -1,26 +1,27 @@
-fullscreen = $("#schemaBuilder").data("fullscreen");
+var fullscreen = $("#schemaBuilder").data("fullscreen");
 
 if (!fullscreen) {	
-	$('#AppBodyHeader').hide();
-	$('.bPageTitle').hide();
-	$('#schemaBuilderToolbar').hide();
+	$('#AppBodyHeader').add('.bPageTitle')
+											.add('#schemaBuilderToolbar')
+											.hide();
 
-	$('#schemaBuilder').height('100%');
-	$('html').height('100%');
-	$('body').height('100%');
-	$('#contentWrapper').height('100%');
-	$('#schemaBuilderWrapper').height('100%');
-	$('.main').height('100%');
-	$('#schemaBuilderSidebar').height('100%');
-	$('#object-listpane').height('100%');
+	$('#schemaBuilder').add('html')
+											.add('body')
+											.add('#contentWrapper')
+											.add('#schemaBuilderWrapper')
+											.add('.main')
+											.add('#schemaBuilderSidebar')
+											.add('#object-listpane')
+											.height('100%');
 
 
 	$("#schemaBuilder").attr( "data-fullscreen", "true" );
+
 } else {
-	console.log('Showing header again');
-	$('#AppBodyHeader').show();
-	$('.bPageTitle').show();
-	$('#schemaBuilderToolbar').show();
+	
+	$('#AppBodyHeader').add('.bPageTitle')
+											.add('#schemaBuilderToolbar')
+											.show();
 
 	$("#schemaBuilder").attr( "data-fullscreen", "false" );
 }
